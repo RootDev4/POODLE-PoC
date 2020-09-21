@@ -53,4 +53,4 @@ Open https://10.0.2.14/ (nginx server's IP address) on the victim's machine and 
  
 If SSL protocol is not SSLv3.0, type ```downgrade``` to start a TLS downgrade attack. This might not work, so as a workaround, you have to manually downgrade the browser's TLS protocol support on the attacker's machine. Open _about:config_ in a new tab of the browser and set _security.tls.version.max_ to 0. Read more about that issue [here](https://github.com/mpgn/poodle-PoC/issues/4).
 
-Then type ```search``` and hit the button "Find CBC block length" on the victim's machine to find the right block length. After the script have found the block length, type ```active``` and hit the button "Run encryption" on the victim's machine. This will start the encryption attack.
+Then type ```search``` and hit the button "Find CBC block length" on the victim's machine to find the right block length. After the script have found the block length, type ```active``` and hit the button "Run decryption" on the victim's machine. This will start the decryption attack.
