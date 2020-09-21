@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # A nginx server installation and configuration script.
 # @author: RootDev4 (c) 09/2020

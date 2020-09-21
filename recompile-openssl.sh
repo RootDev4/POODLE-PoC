@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "[>] Installing prerequisites"
 apt-get install make libtext-template-perl xutils-dev gcc build-essential checkinstall -y > /dev/null
