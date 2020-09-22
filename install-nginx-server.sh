@@ -10,7 +10,7 @@ apt-get install nginx php5-fpm -y > /dev/null
 echo "[>] Generating SSL certificate"
 mkdir /etc/nginx/ssl
 cd /etc/nginx/ssl
-openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=/ST=/L=/O=/CN=bank.com" -keyout server.key -out server.crt > /dev/null
+openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=/ST=/L=/O=/CN=bank.com" -keyout server.key -out server.crt > /dev/null > 2>&1
 
 echo "[>] Adding HTTPS support to nginx configuration"
 cat <<EOF >> /etc/nginx/sites-enabled/default
