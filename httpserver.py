@@ -33,7 +33,7 @@ def getHtml():
                 <p>
                     <button onclick="sendRequest()">Ping HTTPS Server</button>
                     <button onclick="findlengthblock()">Find CBC block length</button>
-                    <button onclick="sendAttack()">Run decryption</button>
+                    <button onclick="sendAttack()">Run block decryption</button>
                 </p>
                 <script type="text/javascript">
                     const url = '""" + sys.argv[1] + """';
