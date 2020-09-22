@@ -25,4 +25,4 @@ touch openssl-${openssl_version[1]}.conf
 echo "/usr/local/ssl/lib" > openssl-${openssl_version[1]}.conf
 sudo ldconfig -v > /dev/null
 echo "PATH=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ssl/bin\"" > /etc/environment
-openssl version
+echo "[>] Done! ${openssl_version}"  
