@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # A simple Man-in-the-Middle attack starter script.
 # @author: RootDev4 (c) 09/2020
