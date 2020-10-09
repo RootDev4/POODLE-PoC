@@ -6,7 +6,12 @@
 
 import sys
 import http.server
-import netifaces as ni
+
+try:
+    import netifaces as ni
+except:
+    print('Missing module `netifaces`. Please install with `pip3 install netifaces`')
+    sys.exit(1)
 
 # HTML website
 def getHtml():
