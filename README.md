@@ -26,6 +26,12 @@ chmod +x recompile-openssl.sh && ./recompile-openssl.sh
 ```
 to recompile the installed OpenSSL software with SSLv3.0 support since these protocol is disabled by default.  
 Get assigned IP address of attacker's machine with ```ip a``` (in this example, it's 10.0.2.17).
+
+httpserver.py imports the netifaces module. If missing, install it with
+```console
+apt install python3-pip -y && pip install netifaces
+```
+
 ## :bomb: Attack!
 On the attacker's machine, run the following in separate terminal tabs/windows.
 
