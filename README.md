@@ -29,7 +29,7 @@ Get assigned IP address of attacker's machine with ```ip a``` (in this example, 
 
 httpserver.py imports the netifaces module. If missing, install it with
 ```console
-apt install python3-pip -y && pip install netifaces
+apt install python3-pip -y && pip3 install netifaces
 ```
 
 ## :bomb: Attack!
